@@ -22,7 +22,7 @@ var month = ['января', 'февраля', 'марта', 'апреля', 'м
 
 saleDate.setDate(saleDate.getDate() + 2) ;
 
-var cupon = 'ГРОМ';
+var cupon = '8AVMB6';
 
 $('.btn__cupon').html(cupon)
 
@@ -37,16 +37,11 @@ var $this = $(this),
 $input.keyup(function(e){
 	var val = $(this).val()
 	
-	if(cupon.toUpperCase()==val.toUpperCase()){
+	if(cupon==val){
 		$input.css({'color': '#68CF64', 'border': '3px solid #68CF64'})
 		$old.addClass('action__price--old')
 		$new.fadeIn(500)
 		$btn.addClass('btn--bonuse')
-	}else{
-		$input.css({'color': '#FF5353', 'border': '3px solid #20a1f9'})
-		$old.removeClass('action__price--old')
-		$new.fadeOut(500)
-		$btn.removeClass('btn--bonuse')
 	}
 })
 

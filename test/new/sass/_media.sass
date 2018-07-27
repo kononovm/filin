@@ -1,0 +1,245 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px)
+	.section
+		width: 100%
+	.main__header
+		padding: 20px
+	.main__content
+		padding: 0 20px
+	
+	.description__img
+		display: none
+	.description__img-wrap
+		order: 3
+	.description__list
+		padding: 0 20px
+		width: 700px
+	.description__wrap
+		flex-direction: column
+		align-items: center
+	.description__action
+		margin: 0
+
+	.mod__wrap
+		padding: 0 20px
+		&:before
+			display: none
+	.mod__item:before
+		display: none
+
+	.galery__wrap
+		width: 610px
+		margin: 0 auto
+
+	.reviews__item
+		margin: 20px
+
+	.action-form
+		padding: 0
+	.action-form__wrap
+		background-image: none
+		background-color: rgba(60,110,113, .6)
+		border-radius: 0
+		height: 100%
+	.action-form__content-wrap
+		padding: 20px
+		text-align: center
+	.action-form__content
+		width: 100%
+		margin-left: 0
+
+	.service__wrap
+		padding: 0 20px
+
+	.pay__item
+		padding: 0 20px
+	.footer__wrap
+		flex-direction: column
+	.footer_contacts
+		text-align: center
+		margin-top: 20px
+
+@media only screen and (max-width : 1080px)
+	.mod__wrap
+		flex-direction: column
+	.mod__item
+		margin: 20px 0
+		&:nth-child(2)
+			margin: 0
+	.ax__wrap
+		justify-content: center
+	.ax__item-wrap
+		width: 400px
+
+	.service__wrap--1
+		flex-direction: column
+
+	.table
+		justify-content: center
+	.table-content__wrap--hidden
+		display: flex
+	.table__item
+		display: none
+	.header__nav
+		display: none
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 920px)
+	body
+		font-size: 16px
+	.main-content__title
+		font-size: 40px
+	.main-content__name
+		font-size: 20px
+	.main-content__subtitle
+		font-size: 18px
+	.main-content__img-wrap
+		width: 240px
+	.main-content__img
+		width: 100%
+@media only screen and (max-width : 840px)
+	.description__list
+		width: 100%
+		padding: 0
+	.description__item
+		padding: 0 20px
+
+	.review__img-wrap
+		width: 100px
+		height: 100px
+		padding: 20px 0 20px 20px
+	.review__img
+		border-radius: 0
+	.reciew__footer
+		display: none
+	.review__text
+		padding: 0 20px 20px 0
+	.service__wrap
+		flex-direction: column
+	.servise__img-wrap--hidden
+		display: none
+	.galery
+		display: none
+	.action__capse
+		flex-direction: column
+	.servise__img-wrap--hidden2
+		width: 400px
+		img
+			width: 100%
+	.mod
+		padding-bottom: 0
+	.description__img-wrap
+		width: 100%
+		padding: 0
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.table
+		display: none
+	.description
+		margin-top: 40px
+	.h-info__list-wrap
+		flex-direction: column
+	.h-info__list
+		margin: 0
+	.action__price
+		font-size: 20px
+		line-height: 3em
+		b
+			font-size: 34px
+	.action__price--old
+		font-size: 16px
+		b
+			font-size: 18px
+@media only screen and (max-width : 678px)
+	.main
+		padding-bottom: 40px
+	.main__content
+		flex-direction: column
+		margin: 0
+	.main-content__title--hidden
+		display: block
+		text-align: center
+	.main-content__text-wrap
+		order: 3
+		.main-content__name, .main-content__title, .main-content__subtitle
+			display: none
+	.main-content__img-wrap
+		order: 2
+		margin: -30px 0 -90px 0
+	.service
+		padding: 40px 0
+	.ax
+		padding: 40px 0
+	.reviews
+		padding: 40px 0
+	.mod
+		padding: 40px 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 460px)
+	.logo__text
+		display: none
+	.head-action__btn:after
+		display: none
+	.action-form__btn
+		margin: 20px 0
+		&:after
+			display: none
+	.servise__img-wrap--hidden2
+		width: 300px
+	.pay__item
+		flex-direction: column
+	.ax__title, .service__title, .reviews__title, .mod__title, .description__title
+		margin-bottom: 20px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 340px)
+	.head-action__btn
+		width: 260px
+	.main-content__img-wrap
+		width: 160px
+	.main-content__title--hidden
+		.main-content__subtitle
+			font-size: 16px
+		.main-content__title
+			margin-bottom: 10px
+	.review
+		flex-direction: column
+		align-items: center
+	.reviews__btn
+		width: 250px
+	.service__text
+		padding: 0
+	.pay__content
+		padding-left: 0
+	.logo__img
+		width: 50px
+		height: 50px
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

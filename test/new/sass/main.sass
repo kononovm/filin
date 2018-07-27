@@ -1,0 +1,588 @@
+@import "libs"
+@import "vars"
+
+body
+	font-size: 18px
+	min-width: 320px
+	margin: 0
+	position: relative
+	font-family: 'Open Sans', sans-serif
+	overflow-x: hidden
+	background-color: #fbfbfb
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+a
+	text-decoration: none
+b
+	font-family: 'Montserrat', sans-serif
+p, h2, h3
+	margin: 0
+a, button
+	outline: none
+button
+	cursor: pointer
+
+.h2
+	font-family: 'Montserrat', sans-serif
+	font-size: 30px
+	text-transform: uppercase
+	font-weight: 900
+	letter-spacing: 0.04em
+
+.section
+	width: 1240px
+	margin: 0 auto
+
+.btn
+	display: block
+	text-align: center
+	text-transform: uppercase
+	background-color: #20a1f9
+	color: #fff
+	padding: 15px
+	letter-spacing: 0.09em
+	border-radius: 10px
+	box-shadow: 0 3px 20px rgba(32,161,249, .40)
+	&:hover
+		box-shadow: none
+		transition: .3s
+	&__text
+		display: block
+	&__cupon
+		display: none
+.btn--bonuse
+	background-color: #68CF64
+	box-shadow: 0 3px 20px rgba(104,207,100, .40)
+
+.action
+	text-align: center
+.action__price-wrap
+	position: relative
+	height: 70px
+.action__price
+	width: 300px
+	bottom: 10px
+	right: calc(50% - 150px)
+	font-family: 'Montserrat', sans-serif
+	font-size: 40px
+	font-weight: 900
+	color: rgba(0,0,0, .4)
+	b
+		font-weight: 900
+		color: $text
+		font-size: 50px
+.action__price--bonuse
+	position: absolute
+.action__price--new
+	color: rgba(104,207,100, .6)
+	right: calc(50% - 100px)
+	display: none
+	b
+		color: #68CF64
+.action__price--old
+	transition: .4s
+	right: calc(50% - 250px)
+	bottom: 15px
+	font-size: 16px
+	opacity: .7
+	b
+		font-size: 20px
+.action__input-wrap
+	padding: 0 20px
+.action__input
+	width: 100%
+	border: 3px solid #D9D9D9
+	box-shadow: 0 3px 6px #D9D9D9
+	border-radius: 10px
+	text-align: center
+	padding: 20px 0
+	font-size: 18px
+	text-transform: uppercase
+	font-family: 'Montserrat', sans-serif
+	color: #FF5353
+	letter-spacing: 0.6em
+	&:focus
+		border: 3px solid #20a1f9
+		transition: .3s
+	&::placeholder
+		font-size: 16px
+		text-transform: none
+		font-family: 'Open Sans', sans-serif
+		letter-spacing: 0.02em
+.action__capse
+	display: flex
+	align-items: center
+	margin-top: 10px
+.action__btn
+	flex: 1
+	margin: 10px
+.action__more
+	flex: 1
+	margin: 10px
+	text-transform: uppercase
+	color: $text
+	&:hover
+		text-decoration: underline
+
+
+
+// ГЛАВНАЯ
+
+.main
+	background-color: $accent
+	color: #fff
+	padding-bottom: 100px
+.main__header
+	padding-top: 20px
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+.logo
+	display: flex
+	align-items: center
+	color: #fff
+.logo__img
+	width: 60px
+	height: 60px
+	margin-right: 10px
+.logo__text
+	b
+		display: block
+		text-transform: uppercase
+		letter-spacing: 0.04em
+
+.nav__item
+	position: relative
+	color: #fff
+	padding: 10px
+	&:before
+		content: ''
+		position: absolute
+		width: 0
+		height: 1px
+		background-color: #fff
+		bottom: 0
+		left: 0
+	&:hover:before
+		transition: .3s
+		width: 100%
+
+.phone__number
+	font-family: 'Montserrat', sans-serif
+	color: #fff
+	letter-spacing: 0.09em
+	&:hover
+		color: $text
+		transition: .3s
+
+.main__content
+	margin-top: 60px
+.main-content
+	display: flex
+	justify-content: space-between
+	align-items: center
+.main-content__name
+	font-size: 26px
+	text-transform: uppercase
+.main-content__title
+	font-family: 'Montserrat', sans-serif
+	font-weight: 900
+	font-size: 80px
+	margin: 0 0 20px 0
+	text-transform: uppercase
+	text-shadow: $shadow
+.main-content__title--hidden
+	display: none
+.main-content__subtitle
+	font-size: 28px
+
+.main-content__action
+	margin-top: 60px
+
+.head-action__text
+	display: flex
+	align-items: center
+.head-action__btn
+	position: relative
+	width: 295px
+	margin-top: 10px
+	&:after
+		content: ''
+		position: absolute
+		background-image: url('../img/arrow1.svg')
+		width: 80px
+		height: 80px
+		background-size: contain
+		background-repeat: no-repeat
+		right: -78px
+		bottom: -4px
+.bonn__btn
+	border: 4px solid #20a1f9
+	cursor: pointer
+.btn--action
+	background-color: #fff
+	text-transform: uppercase
+	color: #20a1f9
+	font-family: 'Montserrat', sans-serif
+	letter-spacing: 0.5em
+	cursor: default
+.head-action__info-text
+	margin-top: 10px
+	opacity: 0
+	a
+		color: #20a1f9
+		&:hover
+			text-decoration: underline
+
+// СРАВНИТЕЛЬНАЯ ТАБЛИЦА
+
+.table
+	padding: 100px 0
+	display: flex
+	justify-content: space-between
+.table__item
+	text-align: center
+.table__name
+	font-size: 30px
+	text-transform: uppercase
+.table__name--right
+	opacity: .6
+.table__img
+	width: 250px
+.table-content__name
+	padding-bottom: 60px
+.table-content__wrap
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 15px 0
+.table-content__data
+	font-family: 'Montserrat', sans-serif
+	font-size: 26px
+.table-content__data--deaction
+	opacity: .6
+.table-content__text
+	text-align: center
+.table-content__line
+	width: 50px
+	height: 4px
+	box-shadow: $shadow
+.table-content__line--action
+	background-color: $accent
+.table-content__line--deaction
+	background-color: rgba(0,0,0, .4)	
+.table-content__wrap--hidden
+	display: none
+
+.description__title
+	text-align: center
+	margin-bottom: 60px
+.description__wrap
+	display: flex
+	justify-content: space-between
+.description__img-wrap
+	width: 608px
+	padding: 0 20px
+.description__img
+	width: 100%
+.description__list
+	flex: 1
+.description__item
+	margin-bottom: 20px
+	b
+		display: block
+.description__action
+	margin-top: -45px
+
+// МОДИФИКАЦИИ
+
+.mod
+	padding: 100px 0
+.mod__title
+	text-align: center
+	margin-bottom: 64px
+.mod__wrap
+	display: flex
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		width: 840px
+		height: 4px
+		background-color: $accent
+		box-shadow: $shadow
+		left: 200px
+		top: -34px
+.mod__item
+	flex: 1
+	background-color: #fff
+	box-shadow: $shadow
+	border-radius: 10px
+	padding: 30px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	text-align: center
+	height: 420px
+	position: relative
+	&:nth-child(2)
+		margin: 0 20px
+		&:before
+			height: 60px
+			top: -64px
+	&:before
+		content: ''
+		position: absolute
+		width: 4px
+		height: 30px
+		background-color: $accent
+		box-shadow: $shadow
+		left: 50%
+		top: -34px
+.mod__item-name
+	font-family: 'Montserrat', sans-serif
+
+// ФОТОГАЛЕРЕЯ
+
+.galery__title
+	text-align: center
+	margin-bottom: 60px
+.galery__wrap
+	display: flex
+	flex-wrap: wrap
+.galery__item--smoll
+	width: 285px
+	height: 285px
+	padding: 10px
+.galery__item--big
+	width: 600px
+	height: 285px
+	padding: 10px
+.galery__item img
+	width: 100%
+	border-radius: 10px
+	box-shadow: $shadow
+.galery__item
+	opacity: .9
+	&:hover
+		transition: .3s
+		opacity: 1
+
+.reviews
+	padding: 100px 0
+.reviews__title
+	text-align: center
+	margin-bottom: 60px
+.reviews__wrap
+	margin-bottom: 20px
+
+.review
+	background-color: #fff
+	border-radius: 10px
+	box-shadow: $shadow
+	display: flex
+	margin-bottom: 30px
+.review__img-wrap
+	width: 250px
+	height: 250px
+.review__img
+	width: 100%
+	border-radius: 10px 0 0 10px
+.review__desc
+	flex: 1
+	padding-left: 20px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+.review__name
+	margin-top: 20px
+.reciew__footer
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 0 20px 20px 0
+.review__capse img
+	width: 60px
+	height: 60px
+	margin-right: 20px
+	border-radius: 10px
+	box-shadow: $shadow
+	opacity: .9
+	&:hover
+		opacity: 1
+		transition: .3s
+.reviews__btn
+	width: 300px
+	margin: 0 auto
+
+// АКЦИЯ
+
+.action-form
+	background-image: url('../img/action_bg.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	color: #fff
+	padding: 60px 0
+.action-form__wrap
+	background-image: url('../img/action_item.png')
+	background-size: cover
+	background-repeat: no-repeat
+	height: 393px
+	border-radius: 10px
+	box-shadow: $shadow
+.action-form__content-wrap
+	padding: 60px 60px 0 0
+.action-form__content
+	width: 50%
+	margin-left: 50%
+.action-form__text
+	font-size: 27px
+.action-form__btn
+	margin: 30px 78px 30px 0
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		width: 82px
+		height: 105px
+		background-image: url('../img/arrow2.svg')
+		background-size: contain
+		bottom: -5px
+		right: -80px
+.action-form__disc
+	font-size: 22px
+
+// СЕРВИС
+
+.service
+	padding: 100px 0
+.service__title
+	text-align: center
+	margin-bottom: 60px
+.service__wrap
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 20px
+	align-items: center
+.servise__img-wrap img
+	border-radius: 10px
+	box-shadow: $shadow
+.service__text
+	flex: 1
+	padding: 0 20px
+.service__text-name
+	display: block
+	font-size: 20px 
+	font-family: 'Montserrat', sans-serif
+	padding-bottom: 10px
+
+.pay__title
+	text-align: center
+	margin-bottom: 60px
+.pay__item
+	display: flex
+	align-items: center
+	padding-bottom: 40px
+.pay__img-wrap
+	width: 80px
+.pay__content
+	flex: 1
+	padding-left: 20px
+
+// АКСЕССУАРЫ
+
+.ax
+	padding: 100px 0
+.ax__title
+	text-align: center
+	margin-bottom: 60px
+.ax__wrap
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.ax__item-wrap
+	padding: 10px
+.ax__item
+	text-align: center
+	background-color: #fff
+	box-shadow: $shadow
+	border-radius: 10px
+	flex: 1
+	padding: 20px 40px
+.ax__img
+	display: block
+	margin: 0 auto
+
+.action__capse--column
+	flex-direction: column
+.ax__name
+	font-family: 'Montserrat', sans-serif
+	padding: 20px 0
+	display: block
+
+.footer
+	background-color: $text
+	color: #fff
+.footer__wrap
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 60px 0
+.footer_contacts
+	text-align: right
+	a
+		color: #fff
+		font-family: 'Montserrat', sans-serif
+		&:hover
+			text-decoration: underline
+
+// СКРЫТЫЕ ФОРМЫ
+
+.h-form__title
+	margin-bottom: 10px
+.h-form__input
+	width: 100%
+	padding: 15px
+	border-radius: 10px
+	margin: 10px 0
+	&::placeholder
+		font-family: 'Open Sans', sans-serif
+.h-form__btn
+	width: 100%
+	border: none
+	margin-top: 10px
+
+.h-info
+	padding: 40px
+.h-info__title
+	text-align: center
+.h-info__list-wrap
+	display: flex
+	justify-content: center
+	max-width: 800px
+.h-info__list
+	margin: 20px 40px
+.h-info__action
+	display: flex
+	margin-top: 40px
+.h-info__price
+	flex: 1
+	text-align: center
+.h-info__img-wrap
+	text-align: center
+.h-info__img
+	width: 240px
+.h-info__desc
+	max-width: 800px
+.h-info__desc--smoll
+	max-width: 500px
+
+@import "media" // Всегда в конце

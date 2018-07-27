@@ -63,8 +63,12 @@ $('.bonn__btn').on('click', function(e) {
 	$this.addClass('btn--action')
 	$('.btn__text').css('display','none')
 	$('.btn__cupon').css('display','block')
-	$('.head-action__info-text').animate({opacity: 1}, 400)
+	$('.head-action__info-text').fadeIn(500)
 })
 }
 
+$('.pop-ap').delay(2000).css('display', 'block').animate({right: 0}, 400)
+$('.pop-ap__close').on('click', function() {
+	$('.pop-ap').fadeOut(400)
+})
 });

@@ -182,8 +182,10 @@
 @media only screen and (max-width : 460px)
 	.logo__text
 		display: none
-	.head-action__btn:after
-		display: none
+	.head-action__btn
+		margin: 0 auto 20px auto
+		&:after
+			display: none
 	.action-form__btn
 		margin: 20px 0
 		&:after
@@ -194,6 +196,19 @@
 		flex-direction: column
 	.ax__title, .service__title, .reviews__title, .mod__title, .description__title
 		margin-bottom: 20px
+	.triggers__btn
+		width: 280px
+		margin: 0 auto
+	.h-info__action
+		flex-direction: column
+	.pop-ap
+		margin-right: 0
+		text-align: center
+	.pop-ap__close
+		width: 50px
+		height: 50px
+		top: -30px
+		right: calc(50% - 25px)
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 340px)
 	.head-action__btn

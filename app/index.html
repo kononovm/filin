@@ -26,6 +26,21 @@
 
 <body>
 
+<div class="pop-ap head-action">
+	<span class="pop-ap__close"></span>
+	<div class="head-action__text">
+		<p>В честь запуска линейки "ФИЛИН 200", мы дарим<br> промо-код на скидку <b>15%</b> каждому <b>10</b> клиенту!</p>
+	</div>
+		<div class="head-action__wrap">
+		<div class="head-action__btn btn bonn__btn">
+			<span class="btn__text">Получить промо-код</span>
+			<span class="btn__cupon">ГРОМ</span>
+		</div>
+		<p class="head-action__info-text">Скопируйте этот текст и вставьте в <a href="#description">карточку товара</a><br>
+		*Промокод действителен до <b class="sale__date"></b> <b class="sale__month"></b></p>
+	</div>
+</div>
+
 <!-- ШАПКА -->
 
 <section class="main" id="main">
@@ -59,18 +74,22 @@
 				<p class="main-content__name">Фотоловушка 2018 года</p>
 				<h1 class="main-content__title">Филин 200</h1>
 				<p class="main-content__subtitle">Наблюдает, фиксирует и передает все события<br>в 2 раза эффективнее предыдущих моделей </p>
-				<div class="main-content__action head-action">
-					<div class="head-action__text">
-						<p>В честь запуска линейки "ФИЛИН 200", мы дарим<br> промо-код на скидку <b>15%</b> каждому <b>10</b> клиенту!</p>
-					</div>
-					<div class="head-action__wrap">
-						<div class="head-action__btn btn bonn__btn">
-							<span class="btn__text">Получить промо-код</span>
-							<span class="btn__cupon">ГРОМ</span>
+				<div class="main-content__action triggers">
+					<div class="triggers__wrap">
+						<div class="triggers__item">
+							<img src="img/tools.svg" alt="Настройка" class="triggers__img">
+							<p class="triggers__text">Настроим под вашего оператора</p>
 						</div>
-						<p class="head-action__info-text">Скопируйте этот текст и вставьте в <a href="#description">карточку товара</a><br>
-							*Промокод действителен до <b class="sale__date"></b> <b class="sale__month"></b></p>
+						<div class="triggers__item">
+							<img src="img/video.svg" alt="Настройка" class="triggers__img">
+							<p class="triggers__text">Подарим видеокурс по использованию</p>
+						</div>
+						<div class="triggers__item">
+							<img src="img/money.svg" alt="Настройка" class="triggers__img">
+							<p class="triggers__text">Вернем деньги, если не подойдет</p>
+						</div>
 					</div>
+					<a data-fancybox data-src="#hidden-form1" data-product="аявка с УТП" data-pprice="0" href="javascript:;" class="btn triggers__btn">Купить</a>
 				</div>
 			</div>
 			<div class="main-content__img-wrap">

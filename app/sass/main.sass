@@ -53,10 +53,23 @@ button
 	&:hover
 		box-shadow: none
 		transition: .3s
+	&__text
+		display: block
+	&__cupon
+		display: none
+.btn--bonuse
+	background-color: #68CF64
+	box-shadow: 0 3px 20px rgba(104,207,100, .40)
 
 .action
 	text-align: center
+.action__price-wrap
+	position: relative
+	height: 70px
 .action__price
+	width: 300px
+	bottom: 10px
+	right: calc(50% - 150px)
 	font-family: 'Montserrat', sans-serif
 	font-size: 40px
 	font-weight: 900
@@ -65,6 +78,44 @@ button
 		font-weight: 900
 		color: $text
 		font-size: 50px
+.action__price--bonuse
+	position: absolute
+.action__price--new
+	color: rgba(104,207,100, .6)
+	right: calc(50% - 100px)
+	display: none
+	b
+		color: #68CF64
+.action__price--old
+	transition: .4s
+	right: calc(50% - 250px)
+	bottom: 15px
+	font-size: 16px
+	opacity: .7
+	b
+		font-size: 20px
+.action__input-wrap
+	padding: 0 20px
+.action__input
+	width: 100%
+	border: 3px solid #D9D9D9
+	box-shadow: 0 3px 6px #D9D9D9
+	border-radius: 10px
+	text-align: center
+	padding: 20px 0
+	font-size: 18px
+	text-transform: uppercase
+	font-family: 'Montserrat', sans-serif
+	color: #FF5353
+	letter-spacing: 0.6em
+	&:focus
+		border: 3px solid #20a1f9
+		transition: .3s
+	&::placeholder
+		font-size: 16px
+		text-transform: none
+		font-family: 'Open Sans', sans-serif
+		letter-spacing: 0.02em
 .action__capse
 	display: flex
 	align-items: center
@@ -159,12 +210,6 @@ button
 .head-action__text
 	display: flex
 	align-items: center
-	span
-		font-family: 'Montserrat', sans-serif
-		font-size: 42px
-		font-weight: 900
-		text-shadow: $shadow
-		margin-right: 10px
 .head-action__btn
 	position: relative
 	width: 295px
@@ -179,6 +224,23 @@ button
 		background-repeat: no-repeat
 		right: -78px
 		bottom: -4px
+.bonn__btn
+	border: 4px solid #20a1f9
+	cursor: pointer
+.btn--action
+	background-color: #fff
+	text-transform: uppercase
+	color: #20a1f9
+	font-family: 'Montserrat', sans-serif
+	letter-spacing: 0.5em
+	cursor: default
+.head-action__info-text
+	margin-top: 10px
+	opacity: 0
+	a
+		color: #20a1f9
+		&:hover
+			text-decoration: underline
 
 // СРАВНИТЕЛЬНАЯ ТАБЛИЦА
 
@@ -269,7 +331,7 @@ button
 	flex-direction: column
 	justify-content: space-between
 	text-align: center
-	height: 360px
+	height: 420px
 	position: relative
 	&:nth-child(2)
 		margin: 0 20px
@@ -384,7 +446,7 @@ button
 .action-form__text
 	font-size: 27px
 .action-form__btn
-	margin: 60px 78px 60px 0
+	margin: 30px 78px 30px 0
 	position: relative
 	&:after
 		content: ''

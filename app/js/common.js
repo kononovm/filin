@@ -67,8 +67,11 @@ $('.bonn__btn').on('click', function(e) {
 })
 }
 
-$('.pop-ap').delay(2000).css('display', 'block').animate({right: 0}, 400)
+$('.pop-ap').delay(3000).css('display', 'block').animate({right: '-508px'}, 400)
 $('.pop-ap__close').on('click', function() {
 	$('.pop-ap').fadeOut(400)
+})
+$('.pop-ap__gift').on('click', function() {
+	$('.pop-ap').animate({right: 0}, 400)
 })
 });

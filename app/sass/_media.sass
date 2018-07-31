@@ -62,6 +62,19 @@
 	.footer_contacts
 		text-align: center
 		margin-top: 20px
+	.action-form
+		padding: 0
+	.action-form__wrap
+		background-image: none
+		background-color: rgba(60,110,113, .6)
+		border-radius: 0
+		height: 100%
+	.action-form__content-wrap
+		padding: 20px
+		text-align: center
+	.action-form__content
+		width: 100%
+		margin-left: 0
 
 @media only screen and (max-width : 1080px)
 	.mod__wrap
@@ -221,6 +234,12 @@
 		height: 50px
 		top: -30px
 		right: calc(50% - 25px)
+	.action-form__btn
+		margin: 20px 0
+		&:after
+			display: none
+
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 340px)
 	.head-action__btn

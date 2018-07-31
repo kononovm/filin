@@ -74,4 +74,13 @@ $('.pop-ap__close').on('click', function() {
 $('.pop-ap__gift').on('click', function() {
 	$('.pop-ap').animate({right: 0}, 400)
 })
+
+$('.pop-ap2').delay(3000).css('display', 'block').animate({right: '-508px'}, 400)
+$('.pop-ap2__close').on('click', function() {
+	$('.pop-ap2').fadeOut(400)
+})
+$('.pop-ap2__gift').on('click', function() {
+	$('.pop-ap2').animate({right: 0}, 400)
+})
+
 });

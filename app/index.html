@@ -36,7 +36,7 @@
 	</div>
 		<div class="head-action__wrap">
 		<div class="head-action__btn btn bonn__btn">
-			<span class="btn__text">Получить промо-код</span>
+			<span class="btn__text">Показать промо-код</span>
 			<span class="btn__cupon">ГРОМ</span>
 		</div>
 		<p class="head-action__info-text">Скопируйте этот текст и вставьте в <a href="#description">карточку товара</a><br>
@@ -465,27 +465,6 @@
 	</div>
 </section>
 
-<!-- АКЦИЯ -->
-
-<section class="action-form" id="action-form">
-	<div class="section action-form__wrap">
-		<div class="action-form__content">
-			<div class="action-form__content-wrap">
-				<p class="action-form__text">В честь запуска линейки "ФИЛИН 200", мы дарим промо-код на скидку <b>15%</b> каждому <b>10</b> клиенту!</p>
-
-				<div class="head-action__wrap">
-					<div class="btn action-form__btn bonn__btn">
-						<span class="btn__text">Получить промо-код</span>
-						<span class="btn__cupon">ГРОМ</span>
-					</div>
-					<p class="head-action__info-text">Вставтьте этот текст в <a href="#description">карточку товара</a><br>
-					*Промокод действителен до <b class="sale__date"></b> <b class="sale__month"></b></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
 <!-- НАШ СЕРВИС -->
 
 <section class="section service" id="service">
@@ -662,15 +641,14 @@
 <!-- СКРЫТЫЕ ФОРМЫ -->
 
 <div style="display: none;" id="hidden-form1" class="h-form">
-	<h3 class="h-form__title">Для участия в акции заполните форму ниже</h3>
-
+	<h3 class="h-form__title">Для покупки фотоловушки Филин 200 заполните форму ниже</h3>
 	<form class="h-form__form" action="/send.php" method="post">
 		<input class="h-form__input" type="text" name='name' required placeholder="Введите Имя...">
 		<input class="h-form__input mask" type="text" name='phone' required placeholder="Введите Номер телефона...">
 		<input type="hidden" name='landing' value="Филин 200" >
 		<input type="hidden" name='category_title' value="Филин 200">
 		<input type="hidden" name='product_title' value="Филин 200">
-		<button class="btn h-form__btn">Получить консультацию</button>
+		<button class="btn h-form__btn">Купить</button>
 	</form>
 
 </div>

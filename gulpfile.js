@@ -40,7 +40,7 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/fancybox-master/dist/jquery.fancybox.min.js',
-		'app/libs/jquery.maskedinput-master/dist/jquery.maskedinput.min.js',
+		'app/libs/input/jquery.inputmask.bundle.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

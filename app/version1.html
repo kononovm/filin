@@ -26,24 +26,6 @@
 
 <body>
 
-<div class="pop-ap head-action">
-	<span class="pop-ap__close"></span>
-	<div class="pop-ap__gift">
-		<img src="img/gift.svg" alt="Подарок">
-	</div>
-	<div class="head-action__text">
-		<p>В честь запуска линейки "ФИЛИН 200", мы дарим<br> промо-код на скидку <b>15%</b> каждому <b>10</b> клиенту!</p>
-	</div>
-		<div class="head-action__wrap">
-		<div class="head-action__btn btn bonn__btn">
-			<span class="btn__text">Показать промо-код</span>
-			<span class="btn__cupon">ГРОМ</span>
-		</div>
-		<p class="head-action__info-text">Скопируйте этот текст и вставьте в <a href="#description">карточку товара</a><br>
-		*Промокод действителен до <b class="sale__date"></b> <b class="sale__month"></b></p>
-	</div>
-</div>
-
 <!-- ШАПКА -->
 
 <section class="main" id="main">
@@ -77,22 +59,18 @@
 				<p class="main-content__name">Фотоловушка 2018 года</p>
 				<h1 class="main-content__title">Филин 200</h1>
 				<p class="main-content__subtitle">Наблюдает, фиксирует и передает все события<br>в 2 раза эффективнее предыдущих моделей </p>
-				<div class="main-content__action triggers">
-					<div class="triggers__wrap">
-						<div class="triggers__item">
-							<img src="img/tools.svg" alt="Настройка" class="triggers__img">
-							<p class="triggers__text">Настроим под вашего оператора</p>
-						</div>
-						<div class="triggers__item">
-							<img src="img/video.svg" alt="Настройка" class="triggers__img">
-							<p class="triggers__text">Подарим видеокурс по использованию</p>
-						</div>
-						<div class="triggers__item">
-							<img src="img/money.svg" alt="Настройка" class="triggers__img">
-							<p class="triggers__text">Вернем деньги, если не подойдет</p>
-						</div>
+				<div class="main-content__action head-action">
+					<div class="head-action__text">
+						<p>В честь запуска линейки "ФИЛИН 200", мы дарим<br> промо-код на скидку <b>15%</b> каждому <b>10</b> клиенту!</p>
 					</div>
-					<a data-fancybox data-src="#hidden-form1" data-product="аявка с УТП" data-pprice="0" href="javascript:;" class="btn triggers__btn">Купить</a>
+					<div class="head-action__wrap">
+						<div class="head-action__btn btn bonn__btn">
+							<span class="btn__text">Получить промо-код</span>
+							<span class="btn__cupon">ГРОМ</span>
+						</div>
+						<p class="head-action__info-text">Скопируйте этот текст и вставьте в <a href="#description">карточку товара</a><br>
+							*Промокод действителен до <b class="sale__date"></b> <b class="sale__month"></b></p>
+					</div>
 				</div>
 			</div>
 			<div class="main-content__img-wrap">
@@ -465,6 +443,27 @@
 	</div>
 </section>
 
+<!-- АКЦИЯ -->
+
+<section class="action-form" id="action-form">
+	<div class="section action-form__wrap">
+		<div class="action-form__content">
+			<div class="action-form__content-wrap">
+				<p class="action-form__text">В честь запуска линейки "ФИЛИН 200", мы дарим промо-код на скидку <b>15%</b> каждому <b>10</b> клиенту!</p>
+
+				<div class="head-action__wrap">
+					<div class="btn action-form__btn bonn__btn">
+						<span class="btn__text">Получить промо-код</span>
+						<span class="btn__cupon">ГРОМ</span>
+					</div>
+					<p class="head-action__info-text">Вставтьте этот текст в <a href="#description">карточку товара</a><br>
+					*Промокод действителен до <b class="sale__date"></b> <b class="sale__month"></b></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- НАШ СЕРВИС -->
 
 <section class="section service" id="service">
@@ -641,24 +640,27 @@
 <!-- СКРЫТЫЕ ФОРМЫ -->
 
 <div style="display: none;" id="hidden-form1" class="h-form">
-	<h3 class="h-form__title">Для покупки фотоловушки Филин 200 заполните форму ниже</h3>
-	<form class="h-form__form" action="/send.php" method="post">
+	<h3 class="h-form__title">Для участия в акции заполните форму ниже</h3>
+
+	<form class="h-form__form" action="/send.php" method="post" onsubmit="yaCounter49748143.reachGoal('form', function () {}); return true;">
 		<input class="h-form__input" type="text" name='name' required placeholder="Введите Имя...">
 		<input class="h-form__input mask" type="text" name='phone' required placeholder="Введите Номер телефона...">
+		<input type="hidden" name='variant' value="1">
 		<input type="hidden" name='landing' value="Филин 200" >
 		<input type="hidden" name='category_title' value="Филин 200">
 		<input type="hidden" name='product_title' value="Филин 200">
-		<button class="btn h-form__btn">Купить</button>
+		<button class="btn h-form__btn">Получить консультацию</button>
 	</form>
 
 </div>
 
-<div style="display: none;" id="hidden-form2" class="h-form">
+<div style="display: none;" id="hidden-form2" class="h-form" onsubmit="yaCounter49748143.reachGoal('form', function () {}); return true;">
 	<h3 class="h-form__title">Для совершения заказа заполните форму ниже</h3>
 
 	<form class="h-form__form" action="/send.php" method="post">
 		<input class="h-form__input" type="text" name='name' required placeholder="Введите Имя...">
 		<input class="h-form__input mask" type="text" name='phone' required placeholder="Введите Номер телефона...">
+		<input type="hidden" name='variant' value="1">
 		<input type="hidden" name='landing' value="Филин 200 | 9-shop" >
 		<input type="hidden" name='category_title' value="Филин 200">
 		<input type="hidden" class="product_title" name='product_title' value="Филин 200">
@@ -915,5 +917,11 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/49748143" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
+
+<script>
+	$(window).load(function() {
+       yaCounter49748143.reachGoal('page-1');
+	});
+</script>
 </body>
 </html>
